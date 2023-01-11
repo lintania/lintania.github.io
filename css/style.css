@@ -58,7 +58,7 @@ header{
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: -650px;
+    margin: -625px;
 }
 .nav li {
     display: inline-block;
@@ -87,14 +87,15 @@ header{
     top: 0;
     right: -100%;
     width:370px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 20px;
-    background: var(--bg-color);
+    background: #ffffffc4;
     box-shadow: -2px 0 4px hsla(0, 4%, 15%, 10%);
     transition: 0.3s;
 }
 .cart.active{
     right: 0;
+    margin-top: 68px;
 }
 .cart-title{
     text-align: center;

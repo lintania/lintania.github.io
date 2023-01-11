@@ -1,6 +1,7 @@
 var cartIcon=$('#cart-icon');
 var cart=$('.cart');
 var closeCart=$('#close-cart');
+var Btn=$('btn-buy');
 
 $(cartIcon).click(function(){
     $(cart).toggleClass("active");
@@ -51,3 +52,7 @@ $(document).on('click','.remove-cart',function(){
     }
     
 })
+$('.btn-buy').click(function(){
+    $('.appendArea').append(temp);
+})
+
