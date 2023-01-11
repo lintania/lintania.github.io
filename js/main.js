@@ -28,19 +28,19 @@ $(document).on('click','input[name="quantity-count"]',function(){
     var priceByQt=priceCount*$(this).val();
     $('.total-price').text('$'+priceByQt);
 })
-$(document).on('click','.add-cart',function(){
-    var thisPrice=$(this).siblings('.price').text().replace("$","");
-    var thisPriceNum=parseInt(thisPrice)
-    var totalNow=$('.total-price').text().replace("$","");
-    var totalNowNum=parseInt(totalNow)
-    if(totalNowNum=='0'){
-        $('.total-price').text($(this).siblings('.price').text());
-    }
-    else{
-        var thisNowNum=thisPriceNum+totalNowNum;
-        $('.total-price').text('$'+thisNowNum)
-    }
-})
+// $(document).on('click','.add-cart',function(){
+//     var thisPrice=$(this).siblings('.price').text().replace("$","");
+//     var thisPriceNum=parseInt(thisPrice)
+//     var totalNow=$('.total-price').text().replace("$","");
+//     var totalNowNum=parseInt(totalNow)
+//     if(totalNowNum=='0'){
+//         $('.total-price').text($(this).siblings('.price').text());
+//     }
+//     else{
+//         var thisNowNum=thisPriceNum+totalNowNum;
+//         $('.total-price').text('$'+thisNowNum)
+//     }
+// })
 $(document).on('click','.remove-cart',function(){
     $(this).parents('.cart-box').html('');
     //remove
@@ -52,10 +52,6 @@ $(document).on('click','.remove-cart',function(){
     }
     
 })
-// $('.btn-buy').click(function(){
-//     $('.btn-buy').alert('購買成功哩');
-// })
-
 $(".btn-buy").click(function(){
         alert("購買完成哩");
      })
