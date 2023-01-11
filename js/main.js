@@ -52,7 +52,11 @@ $(document).on('click','.remove-cart',function(){
     }
     
 })
-$('.btn-buy').click(function(){
-    $('.appendArea').append(temp);
-})
+// $('.btn-buy').click(function(){
+//     $('.btn-buy').alert('購買成功哩');
+// })
+
+$(".btn-buy").click(function(){
+        alert("購買完成哩");
+     })
 
